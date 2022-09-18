@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Example Site</title>
+        <link>https://glacial86.gitee.io/myblog/post/</link>
+        <description>Recent content in Posts on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 04 Sep 2022 20:13:39 +0800</lastBuildDate><atom:link href="https://glacial86.gitee.io/myblog/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Test</title>
+        <link>https://glacial86.gitee.io/myblog/p/test/</link>
+        <pubDate>Sun, 04 Sep 2022 20:13:39 +0800</pubDate>
+        
+        <guid>https://glacial86.gitee.io/myblog/p/test/</guid>
+        <description>&lt;h1 id=&#34;this&#34;&gt;This&lt;/h1&gt;
+&lt;p&gt;This is a test&lt;/p&gt;
+&lt;p&gt;$$\frac{a}{b}$$&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
