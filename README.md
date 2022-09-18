@@ -2,6 +2,6 @@
 
 ---
 
-Fork from [@lilin90](lilin90/lilin90.github.io)
+My Home Page [homepage](pengjiaqiang86.github.io)
 
-See [知乎@Lilian Lee](https://zhuanlan.zhihu.com/p/57361697)
+Theme from [hugo-tranquilpeak](https://themes.gohugo.io/themes/hugo-tranquilpeak-theme/)
