@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>subcategory on Peng</title>
+    <link>https://pengjiaqiang86.github.io/categories/subcategory/</link>
+    <description>Recent content in subcategory on Peng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2022 10:35:22 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Page</title>
+      <link>https://pengjiaqiang86.github.io/2022/09/test-page/</link>
+      <pubDate>Mon, 19 Sep 2022 10:35:22 +0800</pubDate>
+      
+      <guid>https://pengjiaqiang86.github.io/2022/09/test-page/</guid>
+      <description>&lt;p&gt;简介&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
