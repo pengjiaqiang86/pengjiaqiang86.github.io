@@ -15,7 +15,7 @@
 baseURL = "https://pengjiaqiang86.github.io/"
 languageCode = "en-us"
 defaultContentLanguage = "en-us"
-title = "Hugo tranquilpeak theme"
+title = "Peng"
 theme = "tranquilpeak"
 disqusShortname = "tranquilpeak"
 # googleAnalytics = "UA-123-45"
@@ -44,15 +44,15 @@ canonifyurls = true
 # Author
 # ------
 [author]
-  name = "Firstname Lastname"
-  bio = "Super bio with markdown support **COOL**"
-  job = "Your job title"
-  location = "France"
+  name = "Peng Peng"
+  bio = "This is bio"
+  job = "---"
+  location = "China"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
   gravatarEmail = "thibaud.lepretre@gmail.com"
   # Your profile picture
   # Overwritten by your gravatar image if `author.gravatarEmail` is filled
-  picture = "https://cdn1.iconfinder.com/data/icons/ninja-things-1/1772/ninja-simple-512.png"
+  picture = "https://pengjiaqiang86.github.io/resources/_gen/images"
   # Your Twitter username without the @. E.g : thibaudlepretre
   # twitter = "thibaudlepretre"
   # Your google plus profile id. E.g : +ThibaudLepretre or 114625208755123718311
@@ -93,17 +93,23 @@ canonifyurls = true
   url = "/#about"
 
 [[menu.links]]
-  weight = 1
+  weight = 6
   identifier = "github"
   name = "GitHub"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-github\" aria-hidden=\"true\"></i>"
   url = "https://github.com/kakawait"
 [[menu.links]]
-  weight = 2
+  weight = 7
   identifier = "stackoverflow"
   name = "Stack Overflow"
   pre = "<i class=\"sidebar-button-icon fab fa-lg fa-stack-overflow\" aria-hidden=\"true\"></i>"
   url = "https://stackoverflow.com/users/636472/kakawait"
+[[menu.links]]
+  weight = 6
+  identifier = "gitee"
+  name = "Gitee"
+  pre = "<i class=\"sidebar-button-icon fab fa-lg fa-gitee\" aria-hidden=\"true\"></i>"
+  url = "https://gitee.com/"
 
 [[menu.misc]]
   weight = 1
@@ -119,7 +125,7 @@ canonifyurls = true
   # -----------
   # Description
   # -----------
-  description = "Hugo tranquilpeak theme demo"
+  description = "My Personal WebPage"
 
   # ------------------
   # Syntax highlighter
@@ -185,7 +191,7 @@ canonifyurls = true
   # Current image is on AWS S3 and delivered by AWS CloudFront.
   # Otherwise put your image, for example `cover.jpg` in folder `static/images/`,
   # and use relative url : `images/cover.jpg`
-  coverImage = "images/cover.jpg"
+  coverImage = "images/star.jpg"
 
   # Display an image gallery at the end of a post which have photos variables (false: disabled, true: enabled)
   imageGallery = true
@@ -292,15 +298,15 @@ canonifyurls = true
   # Comment and uncomment to enable or disable sharing options
   # If you wanna add a sharing option, read user documentation :
   # Tranquilpeak configuration > Theme configuration > sharing-options
-  [[params.sharingOptions]]
-    name = "Facebook"
-    icon = "fab fa-facebook-square"
-    url = "https://www.facebook.com/sharer/sharer.php?u=%s"
+  # [[params.sharingOptions]]
+  #  name = "Facebook"
+  #  icon = "fab fa-facebook-square"
+  #  url = "https://www.facebook.com/sharer/sharer.php?u=%s"
 
-  [[params.sharingOptions]]
-    name = "Twitter"
-    icon = "fab fa-twitter"
-    url = "https://twitter.com/intent/tweet?text=%s"
+  # [[params.sharingOptions]]
+  #  name = "Twitter"
+  #  icon = "fab fa-twitter"
+  #  url = "https://twitter.com/intent/tweet?text=%s"
 
 
 #  [[params.sharingOptions]]
