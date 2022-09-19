@@ -1,7 +1,3 @@
-# Personal website
+<h1 align="center">Test</h1>
 
----
-
-My Home Page [homepage](pengjiaqiang86.github.io)
-
-Theme from [hugo-tranquilpeak](https://themes.gohugo.io/themes/hugo-tranquilpeak-theme/)
+HUGO生成的静态网页
