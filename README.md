@@ -1,3 +1,3 @@
-<h1 align="center">Test</h1>
+# My Personal Website
 
-HUGO生成的静态网页
+Personal website built by [hugo](https://gohugo.io/), and theme cloned from [tranquilpeak](https://github.com/kakawait/hugo-tranquilpeak-theme).
