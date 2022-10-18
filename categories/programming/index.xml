@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>programming on Peng</title>
+    <link>https://pengjiaqiang86.github.io/categories/programming/</link>
+    <description>Recent content in programming on Peng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Oct 2022 22:51:00 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>jshell介绍及使用</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/jshell%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/</link>
+      <pubDate>Tue, 18 Oct 2022 22:51:00 +0800</pubDate>
+      
+      <guid>https://pengjiaqiang86.github.io/2022/10/jshell%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/</guid>
+      <description>&lt;p&gt;jshell是什么&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-batch&#34; data-lang=&#34;batch&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jshell
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;简介&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
