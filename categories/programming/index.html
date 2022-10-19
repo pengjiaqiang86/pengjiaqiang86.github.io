@@ -10,9 +10,9 @@
   "@id":"https:\/\/pengjiaqiang86.github.io\/",
   "author": {
     "@type": "Person",
-    "name": "Peng Peng",
+    "name": "PengJQ",
     
-    "image": "https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5"
+    "image": "https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon"
     
   },
   "name":"Peng",
@@ -26,7 +26,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.104.3 with theme Tranquilpeak 0.5.3-BETA">
-<meta name="author" content="Peng Peng">
+<meta name="author" content="PengJQ">
 <meta name="keywords" content="">
 <meta name="description" content="My Personal WebPage">
 
@@ -51,8 +51,8 @@
 
 
 
-  <meta property="og:image" content="https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5?s=640">
-  <meta property="twitter:image" content="https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5?s=640">
+  <meta property="og:image" content="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon">
+  <meta property="twitter:image" content="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon">
 
 
 
@@ -101,7 +101,7 @@
     
     
       
-        <img class="header-picture" src="https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5?s=90" alt="Author&#39;s picture" />
+        <img class="header-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
       
     
     </a>
@@ -113,9 +113,9 @@
     
       <div class="sidebar-profile">
         <a href="https://pengjiaqiang86.github.io/#about" aria-label="Read more about the author">
-          <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5?s=110" alt="Author&#39;s picture" />
+          <img class="sidebar-profile-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
         </a>
-        <h4 class="sidebar-profile-name">Peng Peng</h4>
+        <h4 class="sidebar-profile-name">PengJQ</h4>
         
           <h5 class="sidebar-profile-bio">Hello World</h5>
         
@@ -201,7 +201,7 @@
     
       <a class="sidebar-button-link " href="https://gitee.com/" target="_blank" rel="noopener" title="Gitee">
     
-      <i class="sidebar-button-icon fab fa-lg fa-gitee" aria-hidden="true"></i>
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
       
       <span class="sidebar-button-desc">Gitee</span>
     </a>
@@ -252,9 +252,9 @@
     <div class="postShorten-header">
       <h1 class="postShorten-title">
       
-        <a class="link-unstyled" href="https://pengjiaqiang86.github.io/2022/10/jshell%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/" aria-label="Open the post: jshell介绍及使用">
+        <a class="link-unstyled" href="https://pengjiaqiang86.github.io/2022/10/jshell/" aria-label="Open the post: jshell">
       
-          jshell介绍及使用
+          jshell
         </a>
       </h1>
       
@@ -282,20 +282,148 @@
     </div>
     <div class="postShorten-excerpt">
       
-        <p>jshell是什么</p>
+        <h1 id="jshell">jshell</h1>
+<h2 id="jshell是什么">jshell是什么</h2>
+<p>jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。</p>
+<h2 id="使用">使用</h2>
+<p>在命令行输入</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>jshell
-</span></span></code></pre></div><p>简介</p>
+</span></span></code></pre></div><p>可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>jshell<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> 5<span style="color:#f92672">;</span> <span style="color:#66d9ef">double</span> b <span style="color:#f92672">=</span> 5<span style="color:#f92672">.</span><span style="color:#a6e22e">6</span><span style="color:#f92672">;</span> <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">0f</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">==&gt;</span> 5
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">==&gt;</span> 5<span style="color:#f92672">.</span><span style="color:#a6e22e">6</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">==&gt;</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>jshell<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> a<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> b<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">...&gt;</span> <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">...&gt;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>  已创建 方法 <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">,</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>其他命令：</p>
+<ul>
+<li>/help可以获取帮助</li>
+</ul>
+<pre tabindex="0"><code>|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+</code></pre><ul>
+<li>
+<p>/list
+查看输入的所有代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+</code></pre></li>
+<li>
+<p>/edit启动一个文本编辑器，以编辑历史输入代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>/edit 2
+</code></pre></li>
+<li>
+<p>/drop删除输入</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+</code></pre></li>
+<li>
+<p>/save在当前目录保存历史输入代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>/save test.txt
+</code></pre><p>则在当前目录生成test.txt文件，打开文件，内容即为历史输入</p>
+</li>
+<li>
+<p>/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+</code></pre></li>
+<li>
+<p>/exit退出jshell</p>
+</li>
+</ul>
+<h2 id="文档及帮助">文档及帮助</h2>
       
       <p>
         
-          <a href="https://pengjiaqiang86.github.io/2022/10/jshell%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/" class="postShorten-excerpt_link link" aria-label="Open the post: jshell介绍及使用">Continue reading</a>
+          <a href="https://pengjiaqiang86.github.io/2022/10/jshell/" class="postShorten-excerpt_link link" aria-label="Open the post: jshell">Continue reading</a>
         
         
       </p>
     </div>
   </div>
   
-    <a href="https://pengjiaqiang86.github.io/2022/10/jshell%E4%BB%8B%E7%BB%8D%E5%8F%8A%E4%BD%BF%E7%94%A8/" aria-label="Open the post: jshell介绍及使用">
+    <a href="https://pengjiaqiang86.github.io/2022/10/jshell/" aria-label="Open the post: jshell">
       <div class="postShorten-thumbnailimg">
         <img alt="" src="https://pengjiaqiang86.github.io/images/cat.jpg"/>
       </div>
@@ -310,7 +438,7 @@
         
         <footer id="footer" class="main-content-wrap">
   <span class="copyrights">
-    &copy; 2022 Peng Peng. All Rights Reserved
+    &copy; 2022 PengJQ. All Rights Reserved
   </span>
 </footer>
 
@@ -323,9 +451,9 @@
       <i class="fa fa-times"></i>
     </div>
     
-      <img id="about-card-picture" src="https://www.gravatar.com/avatar/670d7c44d30f15d098b9f0a73aae7cc5?s=110" alt="Author&#39;s picture" />
+      <img id="about-card-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
     
-    <h4 id="about-card-name">Peng Peng</h4>
+    <h4 id="about-card-name">PengJQ</h4>
     
       <div id="about-card-bio">Hello World</div>
     
@@ -333,7 +461,7 @@
       <div id="about-card-job">
         <i class="fa fa-briefcase"></i>
         <br/>
-        <hr>
+        Post Graduate
       </div>
     
     
@@ -351,7 +479,7 @@
     
   
     
-      <div id="cover" style="background-image:url('https://pengjiaqiang86.github.io/images/star.jpg');"></div>
+      <div id="cover" style="background-image:url('https://pengjiaqiang86.github.io/images/sea.jpg');"></div>
     
   
 

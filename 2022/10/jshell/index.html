@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    
+    <script type="application/ld+json">
+
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "jshell",
+  
+  "image": "https://pengjiaqiang86.github.io/images/cat.jpg",
+  
+  "datePublished": "2022-10-18T22:51:00+08:00",
+  "dateModified": "2022-10-18T22:51:00+08:00",
+  "author": {
+    "@type": "Person",
+    "name": "PengJQ",
+    
+    "image": "https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon"
+    
+  },
+  "mainEntityOfPage": { 
+    "@type": "WebPage",
+    "@id": "https:\/\/pengjiaqiang86.github.io\/2022\/10\/jshell\/" 
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Peng",
+    
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon"
+    }
+    
+  },
+  "description": "jshell jshell是什么 jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。\n使用 在命令行输入\njshell 可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.\njshell\u0026gt; int a = 5; double b = 5.6; float c = 10.0f a ==\u0026gt; 5 b ==\u0026gt; 5.6 c ==\u0026gt; 10.0 jshell\u0026gt; int add(int a, int b) { ...\u0026gt; return a + b; ...\u0026gt; } | 已创建 方法 add(int,int) 其他命令：\n/help可以获取帮助 | 键入 Java 语言表达式, 语句或声明。\r| 或者键入以下命令之一:\r| /list [\u0026lt;名称或 id\u0026gt;|-all|-start]\r| 列出您键入的源\r| /edit \u0026lt;名称或 id\u0026gt;\r| 编辑源条目\r| /drop \u0026lt;名称或 id\u0026gt;\r| 删除源条目\r| /save [-all|-history|-start] \u0026lt;文件\u0026gt;\r| 将片段源保存到文件\r| /open \u0026lt;file\u0026gt;\r| 打开文件作为源输入\r| /vars [\u0026lt;名称或 id\u0026gt;|-all|-start]\r| 列出已声明变量及其值\r| /methods [\u0026lt;名称或 id\u0026gt;|-all|-start]\r| 列出已声明方法及其签名\r| /types [\u0026lt;名称或 id\u0026gt;|-all|-start]\r| 列出类型声明\r| /imports\r| 列出导入的项\r| /exit [\u0026lt;integer-expression-snippet\u0026gt;]\r| 退出 jshell 工具\r| /env [-class-path \u0026lt;路径\u0026gt;] [-module-path \u0026lt;路径\u0026gt;] [-add-modules \u0026lt;模块\u0026gt;] ...\r| 查看或更改评估上下文\r| /reset [-class-path \u0026lt;路径\u0026gt;] [-module-path \u0026lt;路径\u0026gt;] [-add-modules \u0026lt;模块\u0026gt;]...\r| 重置 jshell 工具\r| /reload [-restore] [-quiet] [-class-path \u0026lt;路径\u0026gt;] [-module-path \u0026lt;路径\u0026gt;]...\r| 重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)\r| /history [-all]\r| 您键入的内容的历史记录\r| /help [\u0026lt;command\u0026gt;|\u0026lt;subject\u0026gt;]\r| 获取有关使用 jshell 工具的信息\r| /set editor|start|feedback|mode|prompt|truncation|format ...\r| 设置配置信息\r| /? [\u0026lt;command\u0026gt;|\u0026lt;subject\u0026gt;]\r| 获取有关使用 jshell 工具的信息\r| /!\r| 重新运行上一个片段 -- 请参阅 /help rerun\r| /\u0026lt;id\u0026gt;\r| 按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun\r| /-\u0026lt;n\u0026gt;\r| 重新运行以前的第 n 个片段 -- 请参阅 /help rerun\r|\r| 有关详细信息, 请键入 \u0026#39;/help\u0026#39;, 后跟\r| 命令或主题的名称。\r| 例如 \u0026#39;/help /list\u0026#39; 或 \u0026#39;/help intro\u0026#39;。主题:\r|\r| intro\r| jshell 工具的简介\r| id\r| 片段 ID 以及如何使用它们的说明\r| shortcuts\r| 片段和命令输入提示, 信息访问以及\r| 自动代码生成的按键说明\r| context\r| /env /reload 和 /reset 的评估上下文选项的说明\r| rerun\r| 重新评估以前输入片段的方法的说明 /list 查看输入的所有代码\ne.g.\njshell\u0026gt; int a = 5\ra ==\u0026gt; 5\rjshell\u0026gt; int b = 6\rb ==\u0026gt; 6\rjshell\u0026gt; /list\r1 : int a = 5;\r2 : int b = 6; /edit启动一个文本编辑器，以编辑历史输入代码\ne.g.\n/edit 2 /drop删除输入\ne.g.\njshell\u0026gt; int c = 7\rc ==\u0026gt; 7\rjshell\u0026gt; /drop 3\r| 已删除 变量 c /save在当前目录保存历史输入代码\ne.g.\n/save test.txt 则在当前目录生成test.txt文件，打开文件，内容即为历史输入\n/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型\ne.g.\njshell\u0026gt; public class Hello {\r...\u0026gt; public static void main(String[] args) {\r...\u0026gt; System.out.println(\u0026#34;hello world\u0026#34;);\r...\u0026gt; }\r...\u0026gt; }\r| 已创建 类 Hello\rjshell\u0026gt; /types\r| class Hello /exit退出jshell\n文档及帮助",
+  "keywords": ["tech"]
+}
+
+</script>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="generator" content="Hugo 0.104.3 with theme Tranquilpeak 0.5.3-BETA">
+<meta name="author" content="PengJQ">
+<meta name="keywords" content="tech">
+<meta name="description" content="jshell
+jshell是什么
+jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。
+使用
+在命令行输入
+jshell
+可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.
+jshell&gt; int a = 5; double b = 5.6; float c = 10.0f
+a ==&gt; 5
+b ==&gt; 5.6
+c ==&gt; 10.0
+jshell&gt; int add(int a, int b) {
+   ...&gt; return a &#43; b;
+   ...&gt; }
+|  已创建 方法 add(int,int)
+其他命令：
+
+/help可以获取帮助
+
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+
+
+/list
+查看输入的所有代码
+e.g.
+  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+
+
+/edit启动一个文本编辑器，以编辑历史输入代码
+e.g.
+/edit 2
+
+
+/drop删除输入
+e.g.
+  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+
+
+/save在当前目录保存历史输入代码
+e.g.
+/save test.txt
+则在当前目录生成test.txt文件，打开文件，内容即为历史输入
+
+
+/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型
+e.g.
+jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+
+
+/exit退出jshell
+
+
+文档及帮助">
+
+
+<meta property="og:description" content="jshell
+jshell是什么
+jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。
+使用
+在命令行输入
+jshell
+可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.
+jshell&gt; int a = 5; double b = 5.6; float c = 10.0f
+a ==&gt; 5
+b ==&gt; 5.6
+c ==&gt; 10.0
+jshell&gt; int add(int a, int b) {
+   ...&gt; return a &#43; b;
+   ...&gt; }
+|  已创建 方法 add(int,int)
+其他命令：
+
+/help可以获取帮助
+
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+
+
+/list
+查看输入的所有代码
+e.g.
+  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+
+
+/edit启动一个文本编辑器，以编辑历史输入代码
+e.g.
+/edit 2
+
+
+/drop删除输入
+e.g.
+  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+
+
+/save在当前目录保存历史输入代码
+e.g.
+/save test.txt
+则在当前目录生成test.txt文件，打开文件，内容即为历史输入
+
+
+/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型
+e.g.
+jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+
+
+/exit退出jshell
+
+
+文档及帮助">
+<meta property="og:type" content="article">
+<meta property="og:title" content="jshell">
+<meta name="twitter:title" content="jshell">
+<meta property="og:url" content="https://pengjiaqiang86.github.io/2022/10/jshell/">
+<meta property="twitter:url" content="https://pengjiaqiang86.github.io/2022/10/jshell/">
+<meta property="og:site_name" content="Peng">
+<meta property="og:description" content="jshell
+jshell是什么
+jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。
+使用
+在命令行输入
+jshell
+可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.
+jshell&gt; int a = 5; double b = 5.6; float c = 10.0f
+a ==&gt; 5
+b ==&gt; 5.6
+c ==&gt; 10.0
+jshell&gt; int add(int a, int b) {
+   ...&gt; return a &#43; b;
+   ...&gt; }
+|  已创建 方法 add(int,int)
+其他命令：
+
+/help可以获取帮助
+
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+
+
+/list
+查看输入的所有代码
+e.g.
+  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+
+
+/edit启动一个文本编辑器，以编辑历史输入代码
+e.g.
+/edit 2
+
+
+/drop删除输入
+e.g.
+  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+
+
+/save在当前目录保存历史输入代码
+e.g.
+/save test.txt
+则在当前目录生成test.txt文件，打开文件，内容即为历史输入
+
+
+/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型
+e.g.
+jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+
+
+/exit退出jshell
+
+
+文档及帮助">
+<meta name="twitter:description" content="jshell
+jshell是什么
+jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。
+使用
+在命令行输入
+jshell
+可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.
+jshell&gt; int a = 5; double b = 5.6; float c = 10.0f
+a ==&gt; 5
+b ==&gt; 5.6
+c ==&gt; 10.0
+jshell&gt; int add(int a, int b) {
+   ...&gt; return a &#43; b;
+   ...&gt; }
+|  已创建 方法 add(int,int)
+其他命令：
+
+/help可以获取帮助
+
+|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+
+
+/list
+查看输入的所有代码
+e.g.
+  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+
+
+/edit启动一个文本编辑器，以编辑历史输入代码
+e.g.
+/edit 2
+
+
+/drop删除输入
+e.g.
+  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+
+
+/save在当前目录保存历史输入代码
+e.g.
+/save test.txt
+则在当前目录生成test.txt文件，打开文件，内容即为历史输入
+
+
+/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型
+e.g.
+jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+
+
+/exit退出jshell
+
+
+文档及帮助">
+<meta property="og:locale" content="en-us">
+
+  
+    <meta property="article:published_time" content="2022-10-18T22:51:00">
+  
+  
+    <meta property="article:modified_time" content="2022-10-18T22:51:00">
+  
+  
+  
+    
+      <meta property="article:section" content="programming">
+    
+      <meta property="article:section" content="java">
+    
+  
+  
+    
+      <meta property="article:tag" content="java">
+    
+  
+
+
+<meta name="twitter:card" content="summary">
+
+
+
+
+
+
+
+  <meta property="og:image" content="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon">
+  <meta property="twitter:image" content="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon">
+
+
+
+
+  <meta property="og:image" content="https://pengjiaqiang86.github.io/images/cat.jpg">
+  <meta property="twitter:image" content="https://pengjiaqiang86.github.io/images/cat.jpg">
+
+
+  <meta property="og:image" content="https://pengjiaqiang86.github.io/images/cat.jpg">
+  <meta property="twitter:image" content="https://pengjiaqiang86.github.io/images/cat.jpg">
+
+
+    <title>jshell</title>
+
+    <link rel="icon" href="https://pengjiaqiang86.github.io/favicon.png">
+    
+
+    
+
+    <link rel="canonical" href="https://pengjiaqiang86.github.io/2022/10/jshell/">
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    
+    
+    <link rel="stylesheet" href="https://pengjiaqiang86.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    
+    
+
+    
+      
+    
+    
+  </head>
+
+  <body>
+    <div id="blog">
+      <header id="header" data-behavior="5">
+  <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
+  <div class="header-title">
+    <a class="header-title-link" href="https://pengjiaqiang86.github.io/" aria-label="Go to homepage">Peng</a>
+  </div>
+  
+    
+      <a class="header-right-picture "
+         href="https://pengjiaqiang86.github.io/#about" aria-label="Open the link: /#about">
+    
+    
+    
+      
+        <img class="header-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
+      
+    
+    </a>
+  
+</header>
+
+      <nav id="sidebar" data-behavior="5">
+  <div class="sidebar-container">
+    
+      <div class="sidebar-profile">
+        <a href="https://pengjiaqiang86.github.io/#about" aria-label="Read more about the author">
+          <img class="sidebar-profile-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
+        </a>
+        <h4 class="sidebar-profile-name">PengJQ</h4>
+        
+          <h5 class="sidebar-profile-bio">Hello World</h5>
+        
+      </div>
+    
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/" title="Home">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Home</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/categories" title="Categories">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Categories</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/tags" title="Tags">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Tags</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/archives" title="Archives">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Archives</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/#about" title="About">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">About</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://github.com/pengjiaqiang86" target="_blank" rel="noopener" title="GitHub">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">GitHub</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://stackoverflow.com/" target="_blank" rel="noopener" title="Stack Overflow">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-stack-overflow" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Stack Overflow</span>
+    </a>
+  </li>
+
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://gitee.com/" target="_blank" rel="noopener" title="Gitee">
+    
+      <i class="sidebar-button-icon fab fa-lg fa-github" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">Gitee</span>
+    </a>
+  </li>
+
+
+    </ul>
+    <ul class="sidebar-buttons">
+      
+  <li class="sidebar-button">
+    
+      <a class="sidebar-button-link " href="https://pengjiaqiang86.github.io/index.xml" title="RSS">
+    
+      <i class="sidebar-button-icon fas fa-lg fa-rss" aria-hidden="true"></i>
+      
+      <span class="sidebar-button-desc">RSS</span>
+    </a>
+  </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+      
+  <div class="post-header-cover
+              text-center
+              post-header-cover--full"
+       style="background-image:url('/images/cat.jpg')"
+       data-behavior="5">
+    
+      <div class="post-header main-content-wrap text-center">
+  
+    <h1 class="post-title">
+      jshell
+    </h1>
+  
+  
+  <div class="postShorten-meta post-meta">
+    
+      <time datetime="2022-10-18T22:51:00&#43;08:00">
+        
+  October 18, 2022
+
+      </time>
+    
+    
+  
+  
+    <span>in</span>
+    
+      <a class="category-link" href="https://pengjiaqiang86.github.io/categories/programming">programming</a>, 
+    
+      <a class="category-link" href="https://pengjiaqiang86.github.io/categories/java">java</a>
+    
+  
+
+  </div>
+
+</div>
+    
+  </div>
+
+
+      <div id="main" data-behavior="5"
+        class="hasCover
+               hasCoverMetaIn
+               hasCoverCaption">
+        <article class="post" id="top">
+          
+            <span class="post-header-cover-caption caption">文章cover图片描述</span>
+          
+          
+          <div class="post-content markdown">
+            <div class="main-content-wrap">
+              <h1 id="jshell">jshell</h1>
+<h2 id="jshell是什么">jshell是什么</h2>
+<p>jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。</p>
+<h2 id="使用">使用</h2>
+<p>在命令行输入</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-batch" data-lang="batch"><span style="display:flex;"><span>jshell
+</span></span></code></pre></div><p>可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>jshell<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> 5<span style="color:#f92672">;</span> <span style="color:#66d9ef">double</span> b <span style="color:#f92672">=</span> 5<span style="color:#f92672">.</span><span style="color:#a6e22e">6</span><span style="color:#f92672">;</span> <span style="color:#66d9ef">float</span> c <span style="color:#f92672">=</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">0f</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">==&gt;</span> 5
+</span></span><span style="display:flex;"><span>b <span style="color:#f92672">==&gt;</span> 5<span style="color:#f92672">.</span><span style="color:#a6e22e">6</span>
+</span></span><span style="display:flex;"><span>c <span style="color:#f92672">==&gt;</span> 10<span style="color:#f92672">.</span><span style="color:#a6e22e">0</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span>jshell<span style="color:#f92672">&gt;</span> <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> a<span style="color:#f92672">,</span> <span style="color:#66d9ef">int</span> b<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">...&gt;</span> <span style="color:#66d9ef">return</span> a <span style="color:#f92672">+</span> b<span style="color:#f92672">;</span>
+</span></span><span style="display:flex;"><span>   <span style="color:#f92672">...&gt;</span> <span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">|</span>  已创建 方法 <span style="color:#a6e22e">add</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span><span style="color:#f92672">,</span><span style="color:#66d9ef">int</span><span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>其他命令：</p>
+<ul>
+<li>/help可以获取帮助</li>
+</ul>
+<pre tabindex="0"><code>|  键入 Java 语言表达式, 语句或声明。
+|  或者键入以下命令之一:
+|  /list [&lt;名称或 id&gt;|-all|-start]
+|       列出您键入的源
+|  /edit &lt;名称或 id&gt;
+|       编辑源条目
+|  /drop &lt;名称或 id&gt;
+|       删除源条目
+|  /save [-all|-history|-start] &lt;文件&gt;
+|       将片段源保存到文件
+|  /open &lt;file&gt;
+|       打开文件作为源输入
+|  /vars [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明变量及其值
+|  /methods [&lt;名称或 id&gt;|-all|-start]
+|       列出已声明方法及其签名
+|  /types [&lt;名称或 id&gt;|-all|-start]
+|       列出类型声明
+|  /imports
+|       列出导入的项
+|  /exit [&lt;integer-expression-snippet&gt;]
+|       退出 jshell 工具
+|  /env [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;] ...
+|       查看或更改评估上下文
+|  /reset [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;] [-add-modules &lt;模块&gt;]...
+|       重置 jshell 工具
+|  /reload [-restore] [-quiet] [-class-path &lt;路径&gt;] [-module-path &lt;路径&gt;]...
+|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
+|  /history [-all]
+|       您键入的内容的历史记录
+|  /help [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /set editor|start|feedback|mode|prompt|truncation|format ...
+|       设置配置信息
+|  /? [&lt;command&gt;|&lt;subject&gt;]
+|       获取有关使用 jshell 工具的信息
+|  /!
+|       重新运行上一个片段 -- 请参阅 /help rerun
+|  /&lt;id&gt;
+|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
+|  /-&lt;n&gt;
+|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
+|
+|  有关详细信息, 请键入 &#39;/help&#39;, 后跟
+|  命令或主题的名称。
+|  例如 &#39;/help /list&#39; 或 &#39;/help intro&#39;。主题:
+|
+|  intro
+|       jshell 工具的简介
+|  id
+|       片段 ID 以及如何使用它们的说明
+|  shortcuts
+|       片段和命令输入提示, 信息访问以及
+|       自动代码生成的按键说明
+|  context
+|       /env /reload 和 /reset 的评估上下文选项的说明
+|  rerun
+|       重新评估以前输入片段的方法的说明
+</code></pre><ul>
+<li>
+<p>/list
+查看输入的所有代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>  jshell&gt; int a = 5
+  a ==&gt; 5
+
+  jshell&gt; int b = 6
+  b ==&gt; 6
+
+  jshell&gt; /list
+
+  1 : int a = 5;
+  2 : int b = 6;
+</code></pre></li>
+<li>
+<p>/edit启动一个文本编辑器，以编辑历史输入代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>/edit 2
+</code></pre></li>
+<li>
+<p>/drop删除输入</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>  jshell&gt; int c = 7
+  c ==&gt; 7
+
+  jshell&gt; /drop 3
+  |  已删除 变量 c
+</code></pre></li>
+<li>
+<p>/save在当前目录保存历史输入代码</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>/save test.txt
+</code></pre><p>则在当前目录生成test.txt文件，打开文件，内容即为历史输入</p>
+</li>
+<li>
+<p>/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型</p>
+<p>e.g.</p>
+<pre tabindex="0"><code>jshell&gt; public class Hello {
+ ...&gt; public static void main(String[] args) {
+ ...&gt; System.out.println(&#34;hello world&#34;);
+ ...&gt; }
+ ...&gt; }
+|  已创建 类 Hello
+
+jshell&gt; /types
+|    class Hello
+</code></pre></li>
+<li>
+<p>/exit退出jshell</p>
+</li>
+</ul>
+<h2 id="文档及帮助">文档及帮助</h2>
+<!-- raw HTML omitted -->
+<p><a href="https://docs.oracle.com/javase/10/jshell/introduction-jshell.htm#JSHEL-GUID-630F27C8-1195-4989-9F6B-2C51D46F52C8">Oracle-JShell Introduction</a></p>
+              
+
+
+            </div>
+          </div>
+          <div id="post-footer" class="post-footer main-content-wrap">
+            
+              
+                
+                
+                  <div class="post-footer-tags">
+                    <span class="text-color-light text-small">TAGGED IN</span><br/>
+                    
+  <a class="tag tag--primary tag--small" href="https://pengjiaqiang86.github.io/tags/java/">java</a>
+
+                  </div>
+                
+              
+            
+            
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://pengjiaqiang86.github.io/2022/10/jshell/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+            
+  
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+    <script type="text/javascript">
+      var disqus_config = function() {
+        this.page.url = 'https:\/\/pengjiaqiang86.github.io\/2022\/10\/jshell\/';
+        
+          this.page.identifier = '\/2022\/10\/jshell\/'
+        
+      };
+      (function() {
+        
+        
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+          document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+          return;
+        }
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        var disqus_shortname = 'tranquilpeak';
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+  
+
+
+          </div>
+        </article>
+        <footer id="footer" class="main-content-wrap">
+  <span class="copyrights">
+    &copy; 2022 PengJQ. All Rights Reserved
+  </span>
+</footer>
+
+      </div>
+      <div id="bottom-bar" class="post-bottom-bar" data-behavior="5">
+        
+<div class="post-actions-wrap">
+  <nav >
+    <ul class="post-actions post-action-nav">
+      
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <i class="fa fa-angle-left"></i>
+              <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
+            </a>
+        </li>
+        <li class="post-action">
+          
+            <a class="post-action-btn btn btn--disabled">
+          
+              <span class="hide-xs hide-sm text-small icon-mr">PREVIOUS</span>
+              <i class="fa fa-angle-right"></i>
+            </a>
+        </li>
+      
+    </ul>
+  </nav>
+<ul class="post-actions post-action-share" >
+  
+    <li class="post-action hide-lg hide-md hide-sm">
+      <a class="post-action-btn btn btn--default btn-open-shareoptions" href="#btn-open-shareoptions" aria-label="Share this post">
+        <i class="fa fa-share-alt" aria-hidden="true"></i>
+      </a>
+    </li>
+    
+      <li class="post-action hide-xs">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://pengjiaqiang86.github.io/2022/10/jshell/" title="Share on Linkedin" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+    
+  
+  
+    <li class="post-action">
+      <a class="post-action-btn btn btn--default" href="#disqus_thread" aria-label="Leave a comment">
+        <i class="far fa-comment"></i>
+      </a>
+    </li>
+  
+  <li class="post-action">
+    
+      <a class="post-action-btn btn btn--default" href="#top" aria-label="Back to top">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    
+    </a>
+  </li>
+</ul>
+</div>
+
+
+      </div>
+      
+<div id="share-options-bar" class="share-options-bar" data-behavior="5">
+  <i id="btn-close-shareoptions" class="fa fa-times"></i>
+  <ul class="share-options">
+    
+      <li class="share-option">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fpengjiaqiang86.github.io%2F2022%2F10%2Fjshell%2F" aria-label="Share on Linkedin">
+          <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+<div id="share-options-mask" class="share-options-mask"></div>
+
+
+    </div>
+    
+    <div id="about">
+  <div id="about-card">
+    <div id="about-btn-close">
+      <i class="fa fa-times"></i>
+    </div>
+    
+      <img id="about-card-picture" src="https://www.iconfinder.com/icons/334641/developer_github_account_cat_client_git_hub_social_worker_icon" alt="Author&#39;s picture" />
+    
+    <h4 id="about-card-name">PengJQ</h4>
+    
+      <div id="about-card-bio">Hello World</div>
+    
+    
+      <div id="about-card-job">
+        <i class="fa fa-briefcase"></i>
+        <br/>
+        Post Graduate
+      </div>
+    
+    
+      <div id="about-card-location">
+        <i class="fa fa-map-marker-alt"></i>
+        <br/>
+        China
+      </div>
+    
+  </div>
+</div>
+
+    
+
+    
+  
+    
+      <div id="cover" style="background-image:url('https://pengjiaqiang86.github.io/images/sea.jpg');"></div>
+    
+  
+
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/highlight.min.js" integrity="sha512-z+/WWfyD5tccCukM4VvONpEtLmbAm5LDu7eKiyMQJ9m7OfPEDL7gENyDRL3Yfe8XAuGsS2fS4xSMnl6d30kqGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://pengjiaqiang86.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+
+
+  
+    <script src="https://pengjiaqiang86.github.io/js/cherryblossom.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-gE8KAQyFIzV1C9+GZ8TKJHZS2s+n7EjNtC+IMRn1l5+WYJTHOODUM6JSjZhFhqXmc7bG8Av6XXpckA4tYhflnw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/apache.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-EWROca+bote+7Oaaar1F6y74iZj1r1F9rm/ly7o+/FwJopbBaWtsFDmaKoZDd3QiGU2pGacBirHJNivmGLYrow==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/go.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-GDVzAn0wpx1yVtQsRWmFc6PhJiLBPdUic+h4GWgljBh904O3JU10fk9EKNpVyIoPqkFn54rgL2QBG4BmUTMpiQ==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/http.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-UgZlma8NzkrDb/NWgmLIcTrH7i/CSnLLDRFqCSNF5NGPpjKmzyM25qcoXGOup8+cDakKyaiTDd7N4dyH4YT+IA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/less.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-lot9koe73sfXIrUvIPM/UEhuMciN56RPyBdOyZgfO53P2lkWyyXN7J+njcxIIBRV+nVDQeiWtiXg+bLAJZDTfg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/nginx.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-Zd3e7XxHP00TD0Imr0PIfeM0fl0v95kMWuhyAS3Wn1UTSXTkz0OhtRgBAr4JlmADRgiXr4x7lpeUdqaGN8xIog==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/puppet.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-qtqDO052iXMSP+5d/aE/jMtL9vIIGvONgTJziC2K/ZIB1yEGa55WVxGE9/08rSQ62EoDifS9SWVGZ7ihSLhzMA==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/scss.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-1NmkjnEDnwwwcu28KoQF8vs3oaPFokQHbmbtwGhFfeDsQZtVFI8zW2aE9O8yMYdpdyKV/5blE4pSWw4Z/Sv97w==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/stylus.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-B2wSfruPjr8EJL6IIzQr1eAuDwrsfIfccNf/LCEdxELCgC/S/ZMt/Uvk80aD79m7IqOqW+Sw8nbkvha20yZpzg==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/swift.min.js"></script>
+  
+
+  
+    <script async crossorigin="anonymous" defer integrity="sha512-28oDiQZGKUVN6wQ7PSLPNipOcmkCALXKwOi7bnkyFf8QiMZQxG9EQoy/iiNx6Zxj2cG2SbVa4dXKigQhu7GiFw==" src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/languages/yaml.min.js"></script>
+  
+
+
+<script>
+$(document).ready(function() {
+  hljs.configure({ classPrefix: '', useBR: false });
+  $('pre.code-highlight > code, pre > code').each(function(i, block) {
+    if (!$(this).hasClass('codeblock')) {
+      $(this).addClass('codeblock');
+    }
+    hljs.highlightBlock(block);
+  });
+});
+</script>
+
+
+
+
+    
+  </body>
+</html>
+
