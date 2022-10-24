@@ -8,12 +8,12 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Oct 2022 10:38:45 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/tags/denoise/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Denoise_in_opencv</title>
-      <link>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</link>
+      <title>Denoise in OpenCV</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</link>
       <pubDate>Thu, 20 Oct 2022 10:38:45 +0800</pubDate>
       
-      <guid>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</guid>
-      <description></description>
+      <guid>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</guid>
+      <description>&lt;p&gt;OpenCV(Python)图像去噪&lt;/p&gt;</description>
     </item>
     
   </channel>

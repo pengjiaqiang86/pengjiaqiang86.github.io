@@ -6,14 +6,23 @@
     <description>Recent content in Posts on Peng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 20 Oct 2022 10:38:45 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Oct 2022 21:41:03 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Denoise_in_opencv</title>
-      <link>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</link>
+      <title>Test Page</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/test-page/</link>
+      <pubDate>Mon, 24 Oct 2022 21:41:03 +0800</pubDate>
+      
+      <guid>https://pengjiaqiang86.github.io/2022/10/test-page/</guid>
+      <description>&lt;p&gt;測試頁面，IMAGE，IMAGE GALLERY&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Denoise in OpenCV</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</link>
       <pubDate>Thu, 20 Oct 2022 10:38:45 +0800</pubDate>
       
-      <guid>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</guid>
-      <description></description>
+      <guid>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</guid>
+      <description>&lt;p&gt;OpenCV(Python)图像去噪&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -22,137 +31,7 @@
       <pubDate>Tue, 18 Oct 2022 22:51:00 +0800</pubDate>
       
       <guid>https://pengjiaqiang86.github.io/2022/10/jshell/</guid>
-      <description>&lt;h1 id=&#34;jshell&#34;&gt;jshell&lt;/h1&gt;
-&lt;h2 id=&#34;jshell是什么&#34;&gt;jshell是什么&lt;/h2&gt;
-&lt;p&gt;jshell是自JDK9引入的一种交互式命令行工具，可以在其中执行变量声明、语句和表达式，并立即看到执行结果。&lt;/p&gt;
-&lt;h2 id=&#34;使用&#34;&gt;使用&lt;/h2&gt;
-&lt;p&gt;在命令行输入&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-batch&#34; data-lang=&#34;batch&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jshell
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;可以在其中定义变量、方法、类，或者执行语句和表达式：e.g.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jshell&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 5&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;double&lt;/span&gt; b &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 5&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;6&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;float&lt;/span&gt; c &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;0f&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;a &lt;span style=&#34;color:#f92672&#34;&gt;==&amp;gt;&lt;/span&gt; 5
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;b &lt;span style=&#34;color:#f92672&#34;&gt;==&amp;gt;&lt;/span&gt; 5&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;6&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;c &lt;span style=&#34;color:#f92672&#34;&gt;==&amp;gt;&lt;/span&gt; 10&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;0&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;jshell&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; a&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt; b&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;...&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; a &lt;span style=&#34;color:#f92672&#34;&gt;+&lt;/span&gt; b&lt;span style=&#34;color:#f92672&#34;&gt;;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   &lt;span style=&#34;color:#f92672&#34;&gt;...&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;|&lt;/span&gt;  已创建 方法 &lt;span style=&#34;color:#a6e22e&#34;&gt;add&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;int&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;其他命令：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;/help可以获取帮助&lt;/li&gt;
-&lt;/ul&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;|  键入 Java 语言表达式, 语句或声明。
-|  或者键入以下命令之一:
-|  /list [&amp;lt;名称或 id&amp;gt;|-all|-start]
-|       列出您键入的源
-|  /edit &amp;lt;名称或 id&amp;gt;
-|       编辑源条目
-|  /drop &amp;lt;名称或 id&amp;gt;
-|       删除源条目
-|  /save [-all|-history|-start] &amp;lt;文件&amp;gt;
-|       将片段源保存到文件
-|  /open &amp;lt;file&amp;gt;
-|       打开文件作为源输入
-|  /vars [&amp;lt;名称或 id&amp;gt;|-all|-start]
-|       列出已声明变量及其值
-|  /methods [&amp;lt;名称或 id&amp;gt;|-all|-start]
-|       列出已声明方法及其签名
-|  /types [&amp;lt;名称或 id&amp;gt;|-all|-start]
-|       列出类型声明
-|  /imports
-|       列出导入的项
-|  /exit [&amp;lt;integer-expression-snippet&amp;gt;]
-|       退出 jshell 工具
-|  /env [-class-path &amp;lt;路径&amp;gt;] [-module-path &amp;lt;路径&amp;gt;] [-add-modules &amp;lt;模块&amp;gt;] ...
-|       查看或更改评估上下文
-|  /reset [-class-path &amp;lt;路径&amp;gt;] [-module-path &amp;lt;路径&amp;gt;] [-add-modules &amp;lt;模块&amp;gt;]...
-|       重置 jshell 工具
-|  /reload [-restore] [-quiet] [-class-path &amp;lt;路径&amp;gt;] [-module-path &amp;lt;路径&amp;gt;]...
-|       重置和重放相关历史记录 -- 当前历史记录或上一个历史记录 (-restore)
-|  /history [-all]
-|       您键入的内容的历史记录
-|  /help [&amp;lt;command&amp;gt;|&amp;lt;subject&amp;gt;]
-|       获取有关使用 jshell 工具的信息
-|  /set editor|start|feedback|mode|prompt|truncation|format ...
-|       设置配置信息
-|  /? [&amp;lt;command&amp;gt;|&amp;lt;subject&amp;gt;]
-|       获取有关使用 jshell 工具的信息
-|  /!
-|       重新运行上一个片段 -- 请参阅 /help rerun
-|  /&amp;lt;id&amp;gt;
-|       按 ID 或 ID 范围重新运行片段 -- 参见 /help rerun
-|  /-&amp;lt;n&amp;gt;
-|       重新运行以前的第 n 个片段 -- 请参阅 /help rerun
-|
-|  有关详细信息, 请键入 &amp;#39;/help&amp;#39;, 后跟
-|  命令或主题的名称。
-|  例如 &amp;#39;/help /list&amp;#39; 或 &amp;#39;/help intro&amp;#39;。主题:
-|
-|  intro
-|       jshell 工具的简介
-|  id
-|       片段 ID 以及如何使用它们的说明
-|  shortcuts
-|       片段和命令输入提示, 信息访问以及
-|       自动代码生成的按键说明
-|  context
-|       /env /reload 和 /reset 的评估上下文选项的说明
-|  rerun
-|       重新评估以前输入片段的方法的说明
-&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;/list
-查看输入的所有代码&lt;/p&gt;
-&lt;p&gt;e.g.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  jshell&amp;gt; int a = 5
-  a ==&amp;gt; 5
-
-  jshell&amp;gt; int b = 6
-  b ==&amp;gt; 6
-
-  jshell&amp;gt; /list
-
-  1 : int a = 5;
-  2 : int b = 6;
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;/edit启动一个文本编辑器，以编辑历史输入代码&lt;/p&gt;
-&lt;p&gt;e.g.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/edit 2
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;/drop删除输入&lt;/p&gt;
-&lt;p&gt;e.g.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;  jshell&amp;gt; int c = 7
-  c ==&amp;gt; 7
-
-  jshell&amp;gt; /drop 3
-  |  已删除 变量 c
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;/save在当前目录保存历史输入代码&lt;/p&gt;
-&lt;p&gt;e.g.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;/save test.txt
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;则在当前目录生成test.txt文件，打开文件，内容即为历史输入&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;/vars输出用户定义的变量；/methods输出用户定义的方法；/types输出用户定义的类型&lt;/p&gt;
-&lt;p&gt;e.g.&lt;/p&gt;
-&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;jshell&amp;gt; public class Hello {
- ...&amp;gt; public static void main(String[] args) {
- ...&amp;gt; System.out.println(&amp;#34;hello world&amp;#34;);
- ...&amp;gt; }
- ...&amp;gt; }
-|  已创建 类 Hello
-
-jshell&amp;gt; /types
-|    class Hello
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;/exit退出jshell&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;文档及帮助&#34;&gt;文档及帮助&lt;/h2&gt;</description>
+      <description>&lt;p&gt;JShell介绍及使用&lt;/p&gt;</description>
     </item>
     
   </channel>

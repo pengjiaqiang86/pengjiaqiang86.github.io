@@ -8,12 +8,14 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 20 Oct 2022 10:38:45 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/categories/degital-image-processing/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Denoise_in_opencv</title>
-      <link>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</link>
+      <title>Denoise in OpenCV</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</link>
       <pubDate>Thu, 20 Oct 2022 10:38:45 +0800</pubDate>
       
-      <guid>https://pengjiaqiang86.github.io/2022/10/denoise_in_opencv/</guid>
-      <description></description>
+      <guid>https://pengjiaqiang86.github.io/2022/10/denoise-in-opencv/</guid>
+      <description>OpenCV图像去噪 OpenCV提供了如下四种图像去噪函数：
+cv.fastNlMeansDenoising() - 适用于单个灰度图像 cv.fastNlMeansDenoisingColored() - 适用于单个彩色图像 cv.fastNlMeansDenoisingMulti() - 短时的灰度图像序列 cv.fastNlMeansDenoisingColoredMulti() - 短时的彩色图像序列 各方法的参数如下（以fastNlMeansDenoisingColored()为例）：
+def fastNlMeansDenoisingColored(src: Mat, dts: Mat = ..., h=..., hColor=..., templateWindowSize=..., searchWindowSize=...) -&amp;gt; typing.Any: &amp;#34;&amp;#34;&amp;#34; &amp;#39;fastNlMeansDenoisingColored(src[, dst[, h[, hColor[, templateWindowSize[, searchWindowSize]]]]]) -&amp;gt; dst. @brief Modification of fastNlMeansDenoising function for colored images. @param src Input 8-bit 3-channel image. 输入8位的三通道图像 @param dst Output image with the same size and type as src. 输出同样大小的去噪后的图像 @param templateWindowSize Size in pixels of the template patch that is used to compute weights.</description>
     </item>
     
   </channel>
