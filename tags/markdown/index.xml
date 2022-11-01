@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>markdown on Peng</title>
+    <title>markdown on Homepage</title>
     <link>https://pengjiaqiang86.github.io/tags/markdown/</link>
-    <description>Recent content in markdown on Peng</description>
+    <description>Recent content in markdown on Homepage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 28 May 2015 00:00:00 +0000</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Oct 2022 21:41:03 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Elements showcase</title>
-      <link>https://pengjiaqiang86.github.io/elements-showcase/</link>
-      <pubDate>Thu, 28 May 2015 00:00:00 +0000</pubDate>
+      <title>Math Formula in Markdown</title>
+      <link>https://pengjiaqiang86.github.io/2022/10/math-formula-in-markdown/</link>
+      <pubDate>Mon, 24 Oct 2022 21:41:03 +0800</pubDate>
       
-      <guid>https://pengjiaqiang86.github.io/elements-showcase/</guid>
-      <description>&lt;p&gt;Check out how Tranquilpeak theme display well HTML elements (title, paragraph, blockquote, table and more..). It&amp;rsquo;s simple and elegant.&lt;/p&gt;</description>
+      <guid>https://pengjiaqiang86.github.io/2022/10/math-formula-in-markdown/</guid>
+      <description>&lt;p&gt;測試頁面顯示；
+測試數學公式顯示；
+測試Image Gallery；
+測試頁面內圖像&lt;/p&gt;</description>
     </item>
     
   </channel>
