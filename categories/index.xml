@@ -1,74 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Homepage</title>
-    <link>https://pengjiaqiang86.github.io/categories/</link>
-    <description>Recent content in Categories on Homepage</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 01 Nov 2022 17:04:40 +0800</lastBuildDate><atom:link href="https://pengjiaqiang86.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>digital image processing</title>
-      <link>https://pengjiaqiang86.github.io/categories/digital-image-processing/</link>
-      <pubDate>Tue, 01 Nov 2022 17:04:40 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/digital-image-processing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>opencv</title>
-      <link>https://pengjiaqiang86.github.io/categories/opencv/</link>
-      <pubDate>Tue, 01 Nov 2022 17:04:40 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/opencv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>mechanics</title>
-      <link>https://pengjiaqiang86.github.io/categories/mechanics/</link>
-      <pubDate>Tue, 25 Oct 2022 22:31:48 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/mechanics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>javascript</title>
-      <link>https://pengjiaqiang86.github.io/categories/javascript/</link>
-      <pubDate>Tue, 25 Oct 2022 09:23:34 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/javascript/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programming</title>
-      <link>https://pengjiaqiang86.github.io/categories/programming/</link>
-      <pubDate>Tue, 25 Oct 2022 09:23:34 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/programming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>markdown</title>
-      <link>https://pengjiaqiang86.github.io/categories/markdown/</link>
-      <pubDate>Mon, 24 Oct 2022 21:41:03 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/markdown/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://pengjiaqiang86.github.io/categories/java/</link>
-      <pubDate>Tue, 18 Oct 2022 22:51:00 +0800</pubDate>
-      
-      <guid>https://pengjiaqiang86.github.io/categories/java/</guid>
-      <description></description>
-    </item>
+    <title>Categories | Academic</title>
+    <link>https://example.com/categories/</link>
+      <atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <description>Categories</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 13 Dec 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Categories</title>
+      <link>https://example.com/categories/</link>
+    </image>
     
   </channel>
 </rss>
