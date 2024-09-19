@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: This is a placeholder
+date: 2022-10-01 12:00:00+0800
 inline: false
 related_posts: false
 ---
