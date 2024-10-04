@@ -1,178 +1,303 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Jiaqiang Peng (彭佳强)",
+    "label": "None",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "pengjiaqiang@hnu.edu.cn or pengjiaqiang86@gmail.com", 
+    "phone": "",
+    "url": "https://pengjiaqiang86.github.io/",
+    "summary": "---",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
+      "address": "1 South Lushan St",
+      "postalCode": "410082",
+      "city": "Changsha",
+      "countryCode": "CN",
+      "region": "Hunan Province"
     },
     "profiles": [
       {
         "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
+        "username": "None",
+        "url": "https://twitter.com/"
+      },
+      {
+        "network": "Facebook",
+        "username": "None",
+        "url": "https://facebook.com/"
+      },
+      {
+        "network": "Linkedin",
+        "username": "None",
+        "url": "https://www.linkedin.com/in/jq-peng-6179101a9/"
       }
     ]
   },
-  "work": [
+  "interests": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
-      "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "name": "Programming",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Programming Languages",
+        "High Performance Computing (HPC)"
+      ]
+    },
+    {
+      "name": "Artificial Intelligence",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Machine Learning",
+        "Deep Learning",
+        "AI for Science",
+        "Scientific Machine Learning"
+      ]
+    },
+    {
+      "name": "Computational Mechanics",
+      "icon": "fa-solid fa-tag",
+      "keywords": [
+        "Machine Learning",
+        "Deep Learning",
+        "AI for Science",
+        "Scientific Machine Learning",
+        "Computational Mechanics",
+        "Solid Mechanics",
+        "Fluid Mechanics",
+        "High Performance Computing (HPC)",
+        "Parallel Computing"
+      ]
     }
   ],
-  "volunteer": [
+  "work": [
     {
-      "organization": "People's Climate March",
-      "location": "Zurich, Switzerland",
-      "position": "Lead Organizer",
-      "url": "https://example.com",
-      "startDate": "2014-04-01",
-      "endDate": "2015-07-01",
-      "summary": "Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.",
-      "highlights": ["Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march.", "Men of the year 2014 by Time magazine"]
+      "name": "--",
+      "position": "--",
+      "url": "https://pengjiaqiang86.github.io/",
+      "startDate": "1980-01-01",
+      "endDate": "1980-01-01",
+      "summary": "Summary",
+      "highlights": ["Mechanics"]
     }
   ],
   "education": [
     {
-      "institution": "University of Zurich, Zurich, Switzerland",
-      "location": "Zurich, Switzerland",
-      "url": "https://www.uzh.ch/",
-      "area": "Software Development",
-      "studyType": "PhD",
-      "startDate": "1905-01-01",
-      "endDate": "1905-01-01",
-      "score": "10",
-      "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
-    }
-  ],
-  "certificates": [
-    {
-      "name": "Machine Learning",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-location-dot"
+      "institution": "Hunan University",
+      "location": "Changsha, Hunan, China",
+      "url": "https://www.hnu.edu.cn/",
+      "area": "Civil Engineering",
+      "studyType": "Master of Science",
+      "startDate": "2021-09-01",
+      "endDate": "2024-06-18",
+      "score": "3.70/4.0",
+      "researchArea": "Vehicle detection in low-light environment",
+      "courses": ["Numerical Analysis", "Elasticity and Plasticity", "Finite Element Method", "Dynamics of Structures",
+      "Artificial Intelligence in Build Environments", "Computer-aided Analysis and Simulation of Structures"]
     },
+    {
+      "institution": "Hunan University",
+      "location": "Changsha, Hunan, China",
+      "url": "https://www.hnu.edu.cn/",
+      "area": "Civil Engineering",
+      "studyType": "Bachelor of Engineering",
+      "startDate": "2017-09-01",
+      "endDate": "2021-06-18",
+      "score": "3.78/4.0",
+      "courses": ["Calculus", "Linear Algebra", "Theoretical Mechanics", "Mechanics of Materials",
+      "Structural Mechanics", "Elasticity", "Soil Mechanics", "Fluid Mecahnics", "Bridge Engineering"]
+    }
+  ],
+  "projects": [
     {
       "name": "Quantum Computing",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-tag"
-    },
-    {
-      "name": "Quantum Information",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-envelope"
-    },
-    {
-      "name": "Quantum Cryptography",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-hashtag"
-    },
-    {
-      "name": "Quantum Communication",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-calendar"
-    },
-    {
-      "name": "Quantum Teleportation",
-      "date": "2018-01-01",
-      "issuer": "Stanford University",
-      "url": "https://example.com",
-      "icon": "fa-solid fa-clipboard-check"
+      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
+      "startDate": "2018-01-01",
+      "endDate": "2018-01-01",
+      "url": "https://example.com"
     }
   ],
   "publications": [
     {
-      "name": "Zur Elektrody/namik bewegter Körper",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-06-30",
-      "url": "https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies",
-      "summary": "It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source."
+      "name": "Vehicle detection method for low-light enhancement",
+      "publisher": "Journal of Hunan University",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": "in Chinese."
     },
     {
-      "name": "Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1905-03-18",
-      "url": "https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt",
-      "summary": "In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921."
+      "name": "Vehicle spatiotemporal distribution identification in low-light environment based on image enhancement and object detection",
+      "publisher": "Advanced Engineering Informatics (Under review)",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": ""
     },
     {
-      "name": "Die Grundlage der allgemeinen Relativitätstheorie",
-      "publisher": "Annalen der Physik",
-      "releaseDate": "1916-03-20",
-      "url": "https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie",
-      "summary": "The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914)."
+      "name": "Noncontact measurement of tire deformation based on computer vision and Tire-Net semantic segmentation",
+      "publisher": "Measurement",
+      "releaseDate": "2023",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0263224123005985",
+      "summary": ""
+    },
+    {
+      "name": "Vision-based identification of tire pressure using Tire-YOLO and deformation",
+      "publisher": "Measurement (Under review)",
+      "releaseDate": "2024",
+      "url": "",
+      "summary": ""
+    },
+    {
+      "name": "Study on Available Photovoltaic Area of Urban Building Roof Based on GIS and Satellite Imagery",
+      "publisher": "Building Science",
+      "releaseDate": "2023",
+      "url": "",
+      "summary": "in Chinese. Course project of the Artificial Intelligence in Built Environment."
+    }
+  ],
+  "awards": [
+    {
+      "title": "National Scholarship",
+      "date": "2019-10-01",
+      "awarder": "Ministry of Education, People's Republic of China",
+      "url": "---",
+      "summary": "This scholarship is awarded to the top 1% undergraduate by Ministry of Education, P.R.China."
+    },
+    {
+      "title": "First-class Scholarship of Hunan University",
+      "date": "2021/2022/2023-10-1",
+      "awarder": "Hunan University",
+      "url": "---",
+      "summary": "---"
+    },
+    {
+      "title": "Excellence Reward of the National ZhouPeiyuan Competition on Mechanics",
+      "date": "2019-5-1",
+      "awarder": "Chinese Society of Theoretical and Applied Mechanics",
+      "url": "---",
+      "summary": "---"
+    },
+    {
+      "title": "Second Prize of Hunan Mechanics Competition for College Students",
+      "date": "2019-5-1",
+      "awarder": "Department of Education of Hunan Province",
+      "url": "---",
+      "summary": "---"
+    },
+    {
+      "title": "Second Prize of Math Competition for College Students",
+      "date": "2018-11-1",
+      "awarder": "Mathematical Popularization and Dissemination Committee of the Chinese Mathematical Society (CMS)",
+      "url": "http://cms.org.cn/en/",
+      "summary": "Preliminary contest"
+    },
+    {
+      "title": "First-Class Scholarship for Undergraduate of Hunan University",
+      "date": "2018-10-1",
+      "awarder": "Hunan University",
+      "url": "---",
+      "summary": "---"
+    },
+    {
+      "title": "Some others that are not included",
+      "date": "---",
+      "awarder": "---",
+      "url": "---",
+      "summary": "---"
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Software Designer",
+      "date": "2023-11-05",
+      "issuer": "Ministry of Human Resources and Social Security and Ministry of Industry and Information Technology of the P.R.China",
+      "url": "---",
+      "icon": "fa-solid fa-location-dot"
+    },
+    {
+      "name": "Programmer",
+      "date": "2022-11-04",
+      "issuer": "Ministry of Human Resources and Social Security and Ministry of Industry and Information Technology of the P.R.China",
+      "url": "---",
+      "icon": "fa-solid fa-tag"
+    },
+    {
+      "name": "Computer Software Patent (Astable mechanics solver)",
+      "date": "2023-08-30",
+      "issuer": "National Copyright Administration of the P.R.China",
+      "url": "---",
+      "icon": "fa-solid fa-envelope"
     }
   ],
   "skills": [
     {
-      "name": "Physics",
-      "level": "Master",
+      "name": "Programming",
+      "level": "Proficient / familiar / have experience / beginner",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
+        "Python (Proficient)",
+        "MATLAB (Familiar)",
+        "C/C++ (Familiar)",
+        "Java (Have experience)",
+        "Dart (Proficient)",
+        "Rust (Beginner, learning)"
+      ]
+    },
+    {
+      "name": "Machine Learning",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Machine Learning",
+        "Deep Learning",
+        "PyTorch",
+        "NumPy",
+        "Matplotlib"
+      ]
+    },
+    {
+      "name": "Computer Vision",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Computer Vision",
+        "Digital Image Processing",
+        "OpenCV - Python/C++"
+      ]
+    },
+    {
+      "name": "Numerical Analysis/Simulation",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "FEM and its programming",
+        "ABAQUS,",
+        "ANSYS",
+        "Midas"
+      ]
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "icon": "fa-solid fa-hashtag",
+      "keywords": [
+        "Flutter/Dart",
+        "Astable (A structural mechanics solver)"
       ]
     }
   ],
   "languages": [
     {
-      "language": "German",
+      "language": "Chinese",
       "fluency": "Native speaker",
       "icon": ""
     },
     {
       "language": "English",
-      "fluency": "Fluent",
+      "fluency": "Fluent (IELTS overall band score: 7.0)",
       "icon": ""
-    }
-  ],
-  "interests": [
+    },
     {
-      "name": "Physics",
-      "icon": "fa-solid fa-tag",
-      "keywords": [
-        "Quantum Mechanics",
-        "Quantum Computing",
-        "Quantum Information",
-        "Quantum Cryptography",
-        "Quantum Communication",
-        "Quantum Teleportation"
-      ]
+      "language": "Japanese",
+      "fluency": "Beginner",
+      "icon": ""
     }
   ],
   "references": [
@@ -185,16 +310,6 @@
       "name": "Professor John Doe",
       "icon": "fa-solid fa-thumbtack",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
