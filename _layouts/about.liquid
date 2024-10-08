@@ -35,15 +35,32 @@ layout: default
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
+        {% if page.social %}
+          <div class="social">
+            <div class="contact-icons">{% include social.liquid %}</div>
+
+            <div class="contact-note">{{ site.contact_note }}</div>
+          </div>
+        {% endif %}
       </div>
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
 
+    <!-- Research Interests -->
+    {% if page.profile.research_interests %}
+      <h2> Research Interests </h2>
+
+      <ul type="disc">
+        <li>{{ page.profile.research_interests }}</li>
+      </ul>
+
+    {% endif %}
+
     <!-- News -->
     {% if page.news and site.announcements.enabled %}
       <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">News</a>
       </h2>
       {% include news.liquid limit=true %}
     {% endif %}
@@ -51,7 +68,7 @@ layout: default
     <!-- Latest posts -->
     {% if site.latest_posts.enabled %}
       <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">Latest Posts</a>
       </h2>
       {% include latest_posts.liquid %}
     {% endif %}
@@ -59,7 +76,7 @@ layout: default
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">Selected Publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}
@@ -68,21 +85,18 @@ layout: default
       {% if page.clustrmaps -%}
       <div class="clustrmaps">
         {% if site.clustrmaps_theme == 'map' %}
-          <script type="text/javascript" id="clustrmaps" src='//clustrmaps.com/map_v2.js?d={{ site.clustrmaps_id }}'></script>
+          <div style="width: 300px; height: 300px; overflow: hidden;">
+            <script type="text/javascript" id="clustrmaps" src='//clustrmaps.com/map_v2.js?d={{ site.clustrmaps_id }}'></script>
+          </div>
         {% elsif site.clustrmaps_theme == 'globe' %}
-          <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d={{ site.clustrmaps_id }}"></script>
+          <div style="width: 300px; height: 300px; overflow: hidden;">
+            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d={{ site.clustrmaps_id }}"></script>
+          </div>
         {% endif %}
       </div>
     {%- endif %}
 
     <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
 
     {% if site.newsletter.enabled and site.footer_fixed %}
       {% include scripts/newsletter.liquid center=true %}
