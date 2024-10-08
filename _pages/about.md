@@ -13,10 +13,12 @@ profile:
     <p>Changsha, Hunan, China</p>
     <p>pengjiaiqang [AT] hnu.edu.cn</p>
     <p>pengjiaqiang86 [AT] gmail.com</p>
-  research_interests: >
-    <p>Scientific Machine Learning</p>
-    <p>Computational Mechanics</p>
-    <p>Computer Vision</p>
+
+research_interests:
+  interest1: Scientific Machine Learning
+  interest2: Computational Mechanics
+  interest3: Computer Vision
+
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page

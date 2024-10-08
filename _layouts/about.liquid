@@ -50,11 +50,17 @@ layout: default
     <!-- Research Interests -->
     {% if page.profile.research_interests %}
       <h2> Research Interests </h2>
-
       <ul type="disc">
-        <li>{{ page.profile.research_interests }}</li>
+        {% if page.research_interests.interest1 %}
+          <li>{{ page.research_interests.interest1 }}</li>
+        {% endif %}
+        {% if page.research_interests.interest2 %}
+          <li>{{ page.research_interests.interest2 }}</li>
+        {% endif %}
+        {% if page.research_interests.interest3 %}
+          <li>{{ page.research_interests.interest3 }}</li>
+        {% endif %}
       </ul>
-
     {% endif %}
 
     <!-- News -->
@@ -85,11 +91,11 @@ layout: default
       {% if page.clustrmaps -%}
       <div class="clustrmaps">
         {% if site.clustrmaps_theme == 'map' %}
-          <div style="width: 300px; height: 300px; overflow: hidden;">
+          <div style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto; text-align: center;">
             <script type="text/javascript" id="clustrmaps" src='//clustrmaps.com/map_v2.js?d={{ site.clustrmaps_id }}'></script>
           </div>
         {% elsif site.clustrmaps_theme == 'globe' %}
-          <div style="width: 300px; height: 300px; overflow: hidden;">
+          <div style="width: 300px; height: 300px; overflow: hidden; margin: 0 auto; text-align: center;">
             <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d={{ site.clustrmaps_id }}"></script>
           </div>
         {% endif %}

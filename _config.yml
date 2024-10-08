@@ -116,7 +116,7 @@ zotero_username: # your zotero username
 clustrmaps_id: 0qzCh1--Zwc6StcaQHd-n2JqAFaBe0SMEfqF2Uuj9VQ  # the ID to your clustrmaps widget (after `?d=`)
 
 contact_note: >
-  ---------------------------------------------------------------------------------
+  <p>------------</p>
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
