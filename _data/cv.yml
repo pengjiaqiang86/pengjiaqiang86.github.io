@@ -11,22 +11,27 @@
 - title: Education
   type: time_table
   contents:
+    - title: Ph.D. Student
+      institution: University of Notre Dame, IN, USA
+      year: 2025 - Present
+      description:
+        - Scientific Machine Learning
+        - Computational Mechanics
     - title: M.S.
       institution: Hunan University, Hunan, China
       year: 2021 - 2024
       description:
-        - Description 1.
-        - Description 2.
+        - Deep Learning
+        - Computer Vision
         - title: Description 3.
           contents:
             - Sub-description 1.
             - Sub-description 2.
-    - title: M.Eng.
+    - title: B.Eng.
       institution: Hunan University, Hunan, China
       year: 2017 - 2021
       description:
-        - Description 1.
-        - Description 2.
+        - Civil Engineering
 
 # - title: Experience
 #   type: time_table

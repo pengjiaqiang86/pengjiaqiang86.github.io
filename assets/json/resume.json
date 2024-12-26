@@ -1,18 +1,18 @@
 {
   "basics": {
-    "name": "Jiaqiang Peng (彭佳强)",
+    "name": "Jiaqiang Peng",
     "label": "None",
     "image": "",
-    "email": "pengjiaqiang@hnu.edu.cn or pengjiaqiang86@gmail.com", 
+    "email": "pengjiaqiang86 at gmail.com or jpeng5 at nd.edu", 
     "phone": "",
     "url": "https://pengjiaqiang86.github.io/",
     "summary": "---",
     "location": {
-      "address": "1 South Lushan St",
-      "postalCode": "410082",
-      "city": "Changsha",
-      "countryCode": "CN",
-      "region": "Hunan Province"
+      "address": "South Bend, IN, USA",
+      "postalCode": "46556",
+      "city": "South Bend",
+      "countryCode": "USA",
+      "region": "--"
     },
     "profiles": [
       {
@@ -79,6 +79,18 @@
     }
   ],
   "education": [
+    {
+      "institution": "University of Notre Dame",
+      "location": "South Bend, IN, USA",
+      "url": "https://www.nd.edu/",
+      "area": "Mechanical Engineering with a Focus on Computational Science and Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2025-01-01",
+      "endDate": "--",
+      "score": "--",
+      "researchArea": "Computational Science and Engineering",
+      "courses": ["--"]
+    },
     {
       "institution": "Hunan University",
       "location": "Changsha, Hunan, China",
