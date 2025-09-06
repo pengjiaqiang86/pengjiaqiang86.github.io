@@ -3,7 +3,7 @@
     "name": "Jiaqiang Peng",
     "label": "None",
     "image": "",
-    "email": "pengjiaqiang86 at gmail.com or jpeng5 at nd.edu", 
+    "email": "pengjiaqiang86 at gmail.com", 
     "phone": "",
     "url": "https://pengjiaqiang86.github.io/",
     "summary": "---",
@@ -37,7 +37,8 @@
       "name": "Programming",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Programming Languages",
+        "Python",
+        "C++",
         "High Performance Computing (HPC)"
       ]
     },
@@ -45,25 +46,20 @@
       "name": "Artificial Intelligence",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Machine Learning",
-        "Deep Learning",
+        "Scientific Machine Learning",
         "AI for Science",
-        "Scientific Machine Learning"
+        "Differentiable Physics"
       ]
     },
     {
       "name": "Computational Mechanics",
       "icon": "fa-solid fa-tag",
       "keywords": [
-        "Machine Learning",
-        "Deep Learning",
-        "AI for Science",
-        "Scientific Machine Learning",
-        "Computational Mechanics",
-        "Solid Mechanics",
-        "Fluid Mechanics",
+        "Computational Solid Mechanics",
+        "Computational Fluid Dynamics",
         "High Performance Computing (HPC)",
-        "Parallel Computing"
+        "Parallel Computing",
+        "Numerical Methods for PDEs"
       ]
     }
   ],
@@ -101,8 +97,7 @@
       "endDate": "2024-06-18",
       "score": "3.70/4.0",
       "researchArea": "Vehicle detection in low-light environment",
-      "courses": ["Numerical Analysis", "Elasticity and Plasticity", "Finite Element Method", "Dynamics of Structures",
-      "Artificial Intelligence in Build Environments", "Computer-aided Analysis and Simulation of Structures"]
+      "courses": ["Numerical Analysis", "Elasticity and Plasticity", "Finite Element Method", "Dynamics of Structures"]
     },
     {
       "institution": "Hunan University",
@@ -113,14 +108,13 @@
       "startDate": "2017-09-01",
       "endDate": "2021-06-18",
       "score": "3.78/4.0",
-      "courses": ["Calculus", "Linear Algebra", "Theoretical Mechanics", "Mechanics of Materials",
-      "Structural Mechanics", "Elasticity", "Soil Mechanics", "Fluid Mecahnics", "Bridge Engineering"]
+      "courses": ["Calculus", "Linear Algebra", "Soil Mechanics", "Fluid Mecahnics"]
     }
   ],
   "projects": [
     {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
+      "name": "Placeholder",
+      "summary": "Placeholder",
       "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
       "startDate": "2018-01-01",
       "endDate": "2018-01-01",
@@ -129,15 +123,8 @@
   ],
   "publications": [
     {
-      "name": "Vehicle detection method for low-light enhancement",
-      "publisher": "Journal of Hunan University",
-      "releaseDate": "2024",
-      "url": "",
-      "summary": "in Chinese."
-    },
-    {
       "name": "Vehicle spatiotemporal distribution identification in low-light environment based on image enhancement and object detection",
-      "publisher": "Advanced Engineering Informatics (Under review)",
+      "publisher": "Advanced Engineering Informatics",
       "releaseDate": "2024",
       "url": "",
       "summary": ""
@@ -151,17 +138,10 @@
     },
     {
       "name": "Vision-based identification of tire pressure using Tire-YOLO and deformation",
-      "publisher": "Measurement (Under review)",
+      "publisher": "Measurement",
       "releaseDate": "2024",
       "url": "",
       "summary": ""
-    },
-    {
-      "name": "Study on Available Photovoltaic Area of Urban Building Roof Based on GIS and Satellite Imagery",
-      "publisher": "Building Science",
-      "releaseDate": "2023",
-      "url": "",
-      "summary": "in Chinese. Course project of the Artificial Intelligence in Built Environment."
     }
   ],
   "awards": [
@@ -180,35 +160,7 @@
       "summary": "---"
     },
     {
-      "title": "Excellence Reward of the National ZhouPeiyuan Competition on Mechanics",
-      "date": "2019-5-1",
-      "awarder": "Chinese Society of Theoretical and Applied Mechanics",
-      "url": "---",
-      "summary": "---"
-    },
-    {
-      "title": "Second Prize of Hunan Mechanics Competition for College Students",
-      "date": "2019-5-1",
-      "awarder": "Department of Education of Hunan Province",
-      "url": "---",
-      "summary": "---"
-    },
-    {
-      "title": "Second Prize of Math Competition for College Students",
-      "date": "2018-11-1",
-      "awarder": "Mathematical Popularization and Dissemination Committee of the Chinese Mathematical Society (CMS)",
-      "url": "http://cms.org.cn/en/",
-      "summary": "Preliminary contest"
-    },
-    {
-      "title": "First-Class Scholarship for Undergraduate of Hunan University",
-      "date": "2018-10-1",
-      "awarder": "Hunan University",
-      "url": "---",
-      "summary": "---"
-    },
-    {
-      "title": "Some others that are not included",
+      "title": "Placeholder",
       "date": "---",
       "awarder": "---",
       "url": "---",
@@ -244,12 +196,12 @@
       "level": "Proficient / familiar / have experience / beginner",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "Python (Proficient)",
-        "MATLAB (Familiar)",
-        "C/C++ (Familiar)",
-        "Java (Have experience)",
-        "Dart (Proficient)",
-        "Rust (Beginner, learning)"
+        "Python",
+        "C/C++",
+        "MATLAB",
+        "Java",
+        "Dart",
+        "Rust"
       ]
     },
     {
@@ -258,10 +210,8 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Machine Learning",
-        "Deep Learning",
         "PyTorch",
-        "NumPy",
-        "Matplotlib"
+        "Jax"
       ]
     },
     {
@@ -271,7 +221,7 @@
       "keywords": [
         "Computer Vision",
         "Digital Image Processing",
-        "OpenCV - Python/C++"
+        "OpenCV (Python)"
       ]
     },
     {
@@ -279,10 +229,9 @@
       "level": "",
       "icon": "fa-solid fa-hashtag",
       "keywords": [
-        "FEM and its programming",
-        "ABAQUS,",
-        "ANSYS",
-        "Midas"
+        "Numerical Methods for PDEs (FEM, FDM, FVM)",
+        "ABAQUS",
+        "OpenFOAM"
       ]
     },
     {
@@ -291,7 +240,8 @@
       "icon": "fa-solid fa-hashtag",
       "keywords": [
         "Flutter/Dart",
-        "Astable (A structural mechanics solver)"
+        "Astable (A structural mechanics solver)",
+        "Cross-platform Numerical Solver (working)"
       ]
     }
   ],
@@ -303,7 +253,7 @@
     },
     {
       "language": "English",
-      "fluency": "Fluent (IELTS overall band score: 7.0)",
+      "fluency": "Fluent",
       "icon": ""
     },
     {
@@ -314,14 +264,14 @@
   ],
   "references": [
     {
-      "name": "Professor John Doe",
+      "name": "Placeholder",
       "icon": "fa-solid fa-laptop",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Placeholder"
     },
     {
-      "name": "Professor John Doe",
+      "name": "Placeholder",
       "icon": "fa-solid fa-thumbtack",
-      "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
+      "reference": "Placeholder"
     }
   ]
 }
