@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2024-03-21 10:00:00+0800
+date: 2024-06-21 12:00:00+0800
 inline: true
 related_posts: false
 ---
 
-A paper is accepted. :smile:
+I graduate from Hunan University! :sparkles: :smile:
